@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width:100vw;
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.item{
+    height:150px;
+    width: 200px; 
+}
+.item1{
+    background-color: lightblue;
+}
+.item2{
+    background-color: rebeccapurple;
+    /* align-self: flex-start; */
+}
+.item3{
+    background-color: green;
+    flex-grow: 2;
+}
+.item4{
+    background-color: yellow;
+    flex-shrink: 3;
+}
+.item5{
+    background-color: orange;
+    /* align-self: flex-end; */
+}

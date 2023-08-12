@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            border: 1px solid red;
+            height: 400px;
+            width: 200px;
+            overflow: auto;
+            position: relative;
+            display:none;
+        }
+        .container>img{
+            float: left;
+            position: sticky;
+            /* static relative fixed absolute  sticky*/
+            top: 10px;
+            left: 100x;
+            display: none;
+
+        }
+        .box1{
+            height: 9rem;
+            width: 9rem;
+            background-color: red;
+            position: absolute;
+            top:0;
+            z-index: 3;
+            opacity:0;
+        }
+        .box2{
+            height: 12rem;
+            width: 12rem;
+            background-color:green;
+            position: absolute;
+            top: 10px;
+            z-index: 2;
+            opacity: 0%;
+        }
+        .box3{
+            height: 10rem;
+            width: 10rem;
+            opacity: 0%;
+            display: none;
+            background-color: red;
+            box-shadow: rgba(0, 0, 0, 0.25) 
+            0px 54px 55px, rgba(0, 0, 0, 0.12) 
+            0px -12px 30px, rgba(0, 0, 0, 0.12) 
+            0px 4px 6px, rgba(0, 0, 0, 0.17) 
+            0px 12px 13px, rgba(0, 0, 0, 0.09)
+             0px -3px 5px;
+        }
+        .box4{
+            position: absolute;
+            width: 5rem;
+            height: 2rem;
+            top: 200px;
+            left: 200px;
+            background-color: red;
+            border-radius: 0.5rem;
+            text-align: center;
+            
+        }
+        .box4:hover{
+            background-color: blue;
+            cursor: pointer;
+            transform: scale(1.5);
+            border: 5px solid black;
+        }
+        .box4:active{
+            background-color:green;
+            cursor: pointer;
+            transform: scale(0.9);
+            border: 5px solid black;
+        }
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <img src="https://picsum.photos/100/100" alt=""/>
+        Lorem ipsum dolor sit amet, consectetur adipisicing 
+        elit. Dolore, deleniti ab cupiditate iure incidunt culpa
+         facilis asperiores exercitationem beatae aliquam 
+         possimus eaque consequuntur aperiam, autem unde 
+         ut in ipsa. Aperiam.
+         Lorem, ipsum dolor sit amet consectetur 
+         adipisicing elit. Repudiandae, numquam 
+         consectetur facere libero obcaecati non 
+         eveniet laborum incidunt impedit inventore 
+         accusamus amet officia ullam asperiores quam 
+         in, iste iusto molestias.
+         Lorem ipsum dolor sit amet consectetur 
+         adipisicing elit. Corrupti dolorem quam
+          quas harum similique a! Doloremque eaque 
+          totam dolore dolores, qui vero pariatur alias q
+          uae impedit, ipsam blanditiis numquam odio.
+        
+    </div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"> button</div>
+</body>
+</html>

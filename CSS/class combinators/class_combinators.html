@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title> class combinators</title>
+        <style>
+            .ele ~p{
+                color: green;
+                background-color: lightblue;
+            }
+            .ele>div>p{
+                background-color: green;
+            }
+            .button{
+                border: 2px solid black;
+                background-color: lightgray;
+                width: 3rem;
+                height: 2rem;
+                border-radius: 5px;
+            }
+            .button:hover{
+                background-color: rgb(224, 4, 4);
+                cursor: pointer;
+            }
+            .button:active{
+                background-color: rgb(32, 242, 182);
+            }
+            a:hover{
+                color: red;
+            }
+            a:active{
+                color: yellow ;
+            }
+            .ele>p:nth-child(2){
+                background-color: red;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <p>before div tag</p>
+        <div class="ele">
+            <p>first</p>
+            <p>second</p>
+            <p>third</p>
+            <p>fourth</p>
+            <div>
+                <p>Not direct child </p>
+                <label for="">umesh</label>
+            </div>
+        </div>
+       
+        <p>sibling</p>
+        <p>next Sibling</p>
+        <hr>
+        <div class="button">Submit</div>
+        <a href="www.goolge.com"> Google</a>
+    </body>
+</html>
+<!-- > child selector    .classname>p{} selects only direct child -->
+<!--  desendant selector  .classname p{}  selects all child direct and grand child -->
+<!-- + adjacent sibling selector .classname+p {}selects first adj sibling  -->
+<!-- ~ general sibling  selector  .classname~p {}selects all adj sibling ->
